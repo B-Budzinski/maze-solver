@@ -88,7 +88,6 @@ class Solver:
             logging.info(f"queue: {list(q.queue)}")
             logging.info(f"drawing path: {path}")
             self.maze.stdscr.clear()
-            # self.maze.draw_maze(self.maze.maze, self.maze.stdscr, path)
             self.maze.path = path
             self.maze.draw_maze()
             self.maze.stdscr.refresh()
